@@ -1,0 +1,39 @@
+function basicOp(operator,operand1,operand2) {
+    
+if(operator== '+'){
+       
+ return operand1+operand2;
+       
+    
+}
+ 
+   if(operator== '-'){
+  
+      return operand1-operand2;
+ }
+   
+ if(operator== '*'){
+       
+ return operand1*operand2;
+     
+    }
+  
+  if(operator== '/'){
+     
+   if(operand2!=0){
+       
+ return operand1/operand2;
+     
+        }
+   
+     else{
+          
+  document.write("cannot divide by zero");
+  
+      }
+   
+ }
+
+  
+}
+
