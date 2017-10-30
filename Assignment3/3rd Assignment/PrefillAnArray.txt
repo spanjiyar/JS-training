@@ -1,0 +1,12 @@
+function prefill(n, v) {
+  if(isNaN(n)){
+    throw new TypeError(n+" is invalid");
+  }
+  else{
+  var arr=[];
+  for(var i=1;i<=n;i++){
+  arr.push(v);
+  }
+  return arr;
+  }
+}
