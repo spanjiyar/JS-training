@@ -1,5 +1,5 @@
-function compose(f,g) {
- return function(res){
- return f(g(res));
-}
+function compose(f, g) {
+	return function (res) {
+		return f(g(res));
+	}
 }

@@ -1,19 +1,17 @@
 function cache(func) {
-  // do your magic here
-  var cachedResult = {};
-  return function() {
-    if(arguments.length>0){
-    var key = JSON.stringify(arguments);
-    }
-    if(cachedResult[key]) {
-      return "Cached"+cachedResult[key];
-    }
-    else {
-      var val = func.apply(this, arguments);
-      cachedResult[key] = val;
-      return val;
-    }
-    }
-   
- 
+	var cachedResult = {};
+	return function () {
+		if (arguments.length > 0) {
+			var key = JSON.stringify(arguments);
+		}
+		if (cachedResult[key]) {
+			return "Cached" + cachedResult[key];
+		}
+		else {
+			var val = func.apply(this,
+				arguments);
+			cachedResult[key] = val;
+			return val;
+		}
+	}
 }

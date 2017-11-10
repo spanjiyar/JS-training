@@ -1,13 +1,11 @@
-Object.prototype.hash = function(string)
-{
-var parts =string.split( "." ),
-    length = parts.length,
-    i,
-    x =  this||object;
-    for ( i = 0; i < length; i++ )
-    {
-        x =  !x ? undefined : x[parts[i]];
-    }
-
-  return x;
+Object.prototype.hash = function (
+	string) {
+	var parts = string.split("."),
+		length = parts.length,
+		i,
+		x = this || object;
+	for (i = 0; i < length; i++) {
+		x = !x ? undefined : x[parts[i]];
+	}
+	return x;
 }
