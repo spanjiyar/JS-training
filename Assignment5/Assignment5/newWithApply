@@ -1,0 +1,18 @@
+function construct(Class) 
+{
+    sayHello();
+    sayBye();
+}
+function Constructor(){}
+Constructor.prototype.sayHello = function () {
+  return "Hello";
+};
+Constructor.prototype.sayBye=function(){
+  return "Bye";
+};
+const Class = new Constructor();
+console.log(Class.sayHello());
+const test=new Constructor();
+console.log(test.sayBye());
+
+
