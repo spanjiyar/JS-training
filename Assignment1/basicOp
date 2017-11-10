@@ -1,39 +1,20 @@
-function basicOp(operator,operand1,operand2) {
-    
-if(operator== '+'){
-       
- return operand1+operand2;
-       
-    
+function basicOp(operator, operand1,
+	operand2) {
+	if (operator == '+') {
+		return operand1 + operand2;
+	}
+	else if (operator == '-') {
+		return operand1 - operand2;
+	}
+	else if (operator == '*') {
+		return operand1 * operand2;
+	}
+	else if (operator == '/') {
+		if (operand2 != 0) {
+			return operand1 / operand2;
+		}
+		else {
+			return "Attempt to divide by zero";
+		}
+	}
 }
- 
-   if(operator== '-'){
-  
-      return operand1-operand2;
- }
-   
- if(operator== '*'){
-       
- return operand1*operand2;
-     
-    }
-  
-  if(operator== '/'){
-     
-   if(operand2!=0){
-       
- return operand1/operand2;
-     
-        }
-   
-     else{
-          
-  document.write("cannot divide by zero");
-  
-      }
-   
- }
-
-  
-}
-
