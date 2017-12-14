@@ -1,0 +1,17 @@
+function getSumBetweenNumbers(n) {
+
+    var n1 = 5;
+
+    var n2 = 10;
+
+    var sum = 0;
+
+    for (var i = n1; i <= n2; i++) {
+
+        var sum = sum + i;
+
+    }
+
+    document.write(sum);
+
+}

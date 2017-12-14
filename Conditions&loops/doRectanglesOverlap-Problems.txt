@@ -1,0 +1,22 @@
+function doRectanglesOverlap() {
+
+    var rect1left = 0;
+
+    var rect1width = 90;
+
+    var rect2left = 25;
+
+    var rect2width = 10;
+
+    if (rect1left > rect2width || rect2left > rect1width) {
+
+        document.write("Doesnt override");
+
+    } else {
+
+        document.write("Override");
+
+    }
+
+
+}

@@ -1,0 +1,9 @@
+function findFirstSingleChar() {
+
+    var string = "abracadabra";
+
+    var result = string.split('').sort().join('').replace(/(\w)\1+/g, '').substr(0, 1);
+
+    document.write(result);
+
+}

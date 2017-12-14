@@ -1,0 +1,15 @@
+function factorial(n) {
+
+    var fact = 1;
+
+    while (n > 1) {
+
+        fact = fact * n;
+
+        n--;
+
+    }
+
+    document.write(fact);
+
+}

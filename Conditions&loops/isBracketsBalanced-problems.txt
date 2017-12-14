@@ -1,0 +1,35 @@
+function isBracketsBalanced() {
+
+    var test = 0;
+
+    var str = "[][][][][]";
+
+    for (var i = 0; i < str.length; i++) {
+
+        if (str[i] == '[') {
+
+            test++;
+
+        } else if (str[i] == ']') {
+
+            test--;
+
+        }
+
+        if (test < 0) {
+
+            document.write("Unbalanced bracket");
+
+        }
+
+    }
+
+    if (test > 0) {
+
+        document.write("Unbalanced bracket");
+
+    } else {
+
+        document.write("balanced bracket");
+    }
+}

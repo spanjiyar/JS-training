@@ -1,0 +1,26 @@
+function isTriangle() {
+
+    document.write("hello");
+
+    var n1 = 1;
+
+    var n2 = 2;
+
+    var n3 = 3;
+
+    if (n1 == n2 && n2 == n3) {
+
+        document.write('Equalateral traingle');
+
+    } else if (n1 == n2 && != n3) {
+
+        document.write("Isosceles");
+
+    } else if (n1 != n2 == n3) {
+
+        document.write("Isosceles");
+    } else if (n1 != n2 != n3 != n1) {
+        document.write("Scalene!");
+
+    }
+}

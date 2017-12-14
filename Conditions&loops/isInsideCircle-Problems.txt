@@ -1,0 +1,26 @@
+function isInsideCircle() {
+
+    var x = 2;
+
+    var y = 2;
+
+    var xc = -1;
+
+    var yc = -1;
+
+    var radius = 4;
+
+    var distance = Math.sqrt(Math.pow(xc - x, 2) + Math.pow(yc - y, 2));
+
+    if (distance <= radius) {
+
+        document.write("Point lies inside the circle");
+
+    } else {
+
+        document.write("Point doesn't lies inside the circles");
+
+    }
+
+
+}

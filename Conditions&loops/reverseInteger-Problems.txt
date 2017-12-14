@@ -1,0 +1,9 @@
+function reverseInteger() {
+
+    var num = 12345;
+
+    num = num + "";
+
+    document.write(num.split("").reverse().join(""));
+
+}
