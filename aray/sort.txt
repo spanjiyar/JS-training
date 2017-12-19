@@ -1,0 +1,36 @@
+function sort() {
+
+
+    var str = ['nine', 'eight', 'seven', 'six', 'five', 'four', 'three', 'two', 'one', 'zero'];
+
+    var num = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+
+    for (var i = (num.length - 1); i >= 0; i--) {
+
+        for (var j = (num.length - 1); j > 0; j--) {
+
+            if (num[j] < num[j - 1]) {
+
+                var temp = num[j];
+
+                num[j] = num[j - 1];
+
+                num[j - 1] = temp;
+
+
+                var tmp = str[j];
+
+                str[j] = str[j - 1];
+
+                str[j - 1] = tmp;
+
+            }
+
+        }
+
+    }
+
+    document.write(str);
+
+
+}

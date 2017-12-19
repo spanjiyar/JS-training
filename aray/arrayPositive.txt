@@ -1,0 +1,21 @@
+function arrayPositive() {
+
+    var arr = [0, 1, 2, 3, 4, 5];
+
+    int result = [];
+
+
+    for (var i = 0; i < arr.length; i++) {
+
+        if (arr[i] > 0) {
+
+            result.push(arr[i]);
+
+        }
+
+
+    }
+
+    document.write(result);
+
+}

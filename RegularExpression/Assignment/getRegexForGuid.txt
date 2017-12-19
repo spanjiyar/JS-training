@@ -1,0 +1,6 @@
+function getRegexForGuid() {
+	var str = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/g;
+
+	var a = 'd3aa88e2-c754-41e0-8ba6-4198a34a';
+	document.write(str.test(a));
+}

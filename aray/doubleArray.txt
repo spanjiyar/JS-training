@@ -1,0 +1,27 @@
+function oddNumber() {
+
+    var arr = ['Ace', 10, true];
+
+    var n = arr.length;
+
+    var result = [];
+
+    var count = 0;
+
+    var i;
+
+    for (i = 0; i < arr.length; i++) {
+
+        result.push(arr[i]);
+
+    }
+
+    for (var j = 0; j < arr.length; j++) {
+
+        document.write(result[i] = result[j]);
+
+    }
+    //result=result.slice(-1);
+
+    document.write(result);
+}

@@ -1,0 +1,9 @@
+function getRegexForSSN() {
+
+    var s = /^(?:\d{3}-\d{2}-\d{4}|\d{2}-\d{7})$/;
+
+    var ssn = '111-11-1111';
+
+
+    document.write(s.test(ssn));
+}

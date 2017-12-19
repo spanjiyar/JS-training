@@ -1,0 +1,13 @@
+function removeDuplicate() {
+
+    var arr = [1, 2, 3, 3, 2, 1];
+
+    var unique = arr.filter(function(elem, index, self) {
+
+        return index === self.indexOf(elem);
+
+    })
+
+    document.write(unique);
+
+}

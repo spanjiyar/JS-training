@@ -1,0 +1,18 @@
+function arrayIndex() {
+
+    var array = ['Ace', 10, true];
+
+    var value = 10;
+
+    for (var i = 0; i < array.length; i++) {
+
+
+        if (array[i] == value) {
+
+            document.write(i);
+
+        }
+
+    }
+
+}

@@ -1,0 +1,19 @@
+function getMovingSum() {
+
+    var arr = [10, -10, 10, -10, 10];
+
+    var result = [];
+
+    result.push(arr[0]);
+
+    for (var i = 1; i < arr.length; i++) {
+
+        arr[i] = arr[i - 1] + arr[i];
+
+        result.push(arr[i]);
+
+    }
+
+    document.write(result);
+
+}
